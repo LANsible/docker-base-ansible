@@ -1,0 +1,17 @@
+---
+- name: Create Dockerfiles systemd
+  template:
+    src: Dockerfile-systemd.j2
+    dest: "docker-{{ outer_item.0 }}-ansible/{{ outer_item.1 }}/Dockerfile"
+
+- name: Create Dockerfiles Ubuntu 14.04
+  copy:
+    src: Dockerfile-Ubuntu-14.04
+    dest: "docker-{{ outer_item.0 }}-ansible/{{ outer_item.1 }}/Dockerfile"
+  when: outer_item.0 == 'ubuntu' and outer_item.1 == '14.04'
+
+- name: Copy init-fake.conf
+  copy:
+    src: init-fake.conf
+    dest: "docker-{{ outer_item.0 }}-ansible/{{ outer_item.1 }}/"
+  when: outer_item.0 == 'ubuntu' and outer_item.1 == '14.04'

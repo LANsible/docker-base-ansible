@@ -1,0 +1,11 @@
+---
+base_images:
+  centos:
+    - 7
+    - 6
+  debian:
+    - 9
+    - 8
+  ubuntu:
+    - 16.04
+    - 14.04

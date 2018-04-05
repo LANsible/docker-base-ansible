@@ -1,0 +1,10 @@
+---
+- include_tasks: build-dockerfiles.yml
+  loop: "{{ lookup('dict', base_images) }}"
+  loop_control:
+    loop_var: outer_item
+
+- include_tasks: setup-hooks.yml
+  loop: "{{ lookup('dict', base_images) }}"
+  loop_control:
+    loop_var: outer_item

@@ -1,0 +1,10 @@
+---
+- name: Create hooks dir
+  file:
+    path: "docker-{{ outer_item.0 }}-ansible/{{ outer_item.1 }}/hooks/post_push"
+    state: directory
+
+- name: Setup hooks
+  template:
+    src: post_push
+    dest: "docker-{{ outer_item.0 }}-ansible/{{ outer_item.1 }}/hooks/post_push"
