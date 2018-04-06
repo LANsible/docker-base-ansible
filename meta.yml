@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  author: wilmardo
+  description: |
+    Setup for Ansible testing Docker containers
+
+  license: BSD-3-Clause-Clear
+
+  min_ansible_container_version: 0.9.2
+
+  tags:
+    - systemd
+    - testing

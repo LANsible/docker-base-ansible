@@ -1,0 +1,16 @@
+---
+- src: https://github.com/wilmardo/ansible-container-role-bootstrap
+  version: master
+  name: bootstrap
+
+- src: https://github.com/wilmardo/ansible-container-role-systemd
+  version: master
+  name: systemd
+
+- src: https://github.com/wilmardo/ansible-container-role-upstart
+  version: master
+  name: upstart
+
+- src: https://github.com/wilmardo/ansible-container-role-cleanup
+  version: master
+  name: cleanup

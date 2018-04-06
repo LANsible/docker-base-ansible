@@ -1,0 +1,40 @@
+---
+dist: trusty
+language: python
+sudo: required
+cache:
+  pip: true
+
+env:
+  global:
+    - fast_finish: true
+
+matrix:
+  include:
+    - env: AC_BASE_IMAGE=centos:6 ROLES="bootstrap"
+    - env: AC_BASE_IMAGE=centos:7
+    - env: AC_BASE_IMAGE=fedora:26
+    - env: AC_BASE_IMAGE=fedora:27
+    - env: AC_BASE_IMAGE=debian:8
+    - env: AC_BASE_IMAGE=debian:9
+    - env: AC_BASE_IMAGE=ubuntu:14.04 ROLES="bootstrap upstart"
+    - env: AC_BASE_IMAGE=ubuntu:16.04
+
+services:
+  - docker
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get -qq install --only-upgrade docker-ce -y
+
+install:
+  - $PIP install $ANSIBLE_VERSION molecule docker-py
+
+script:
+  - ansible --version
+  - molecule test --scenario-name $SCENARIO
+
+notifications:
+  email:
+    on_failure: change
+    on_success: never

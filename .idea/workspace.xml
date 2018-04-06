@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4dec0bb-f848-4899-b864-7098a151954b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/defaults/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/Dockerfile-Ubuntu-14.04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/init-fake.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/build-dockerfiles.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/setup-hooks.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Dockerfile-systemd.j2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post-push.j2" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,57 +20,48 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Dockerfile-systemd.j2" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Dockerfile-systemd.j2">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="container.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/container.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build-dockerfiles.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/build-dockerfiles.yml">
+      <file leaf-file-name="requirements.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="75" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post-push.j2" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/post-push.j2">
+      <file leaf-file-name="meta.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meta.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup-hooks.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tasks/setup-hooks.yml">
+      <file leaf-file-name=".travisci.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travisci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="680">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/defaults/main.yml">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="34">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -72,7 +71,22 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>list</find>
+      <find>domoticz</find>
+      <find>\</find>
+      <find>yes</find>
+      <find>no</find>
+      <find>no</find>
+      <find>base_image</find>
     </findStrings>
+    <replaceStrings>
+      <replace>bootstrap</replace>
+      <replace>true</replace>
+      <replace>false</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible\roles</dir>
+      <dir>C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,15 +94,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/files/init-fake.conf" />
-        <option value="$PROJECT_DIR$/defaults/main.yml" />
-        <option value="$PROJECT_DIR$/templates/Dockerfile-Ubuntu-14.04.j2" />
         <option value="$PROJECT_DIR$/templates/Dockerfile.j2" />
         <option value="$PROJECT_DIR$/templates/Dockerfile-systemd.j2" />
         <option value="$PROJECT_DIR$/tasks/main.yml" />
         <option value="$PROJECT_DIR$/tasks/build-dockerfiles.yml" />
         <option value="$PROJECT_DIR$/templates/post-push.j2" />
         <option value="$PROJECT_DIR$/tasks/setup-hooks.yml" />
+        <option value="$PROJECT_DIR$/meta.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/install-packages.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/vars/Ubuntu-14.04.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/setup-prerequisite.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/vars/main.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/vars/Redhat-family.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/vars/Debian-family.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/vars/Fedora-26.yml" />
+        <option value="$PROJECT_DIR$/defaults/main.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/bootstrap-Alpine.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/bootstrap-CentOS.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/bootstrap-Debian.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/bootstrap-Fedora.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/bootstrap-Ubuntu.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/tasks/Alpine.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/tasks/CentOS.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/tasks/Fedora.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/tasks/Ubuntu.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/tasks/Debian.yml" />
+        <option value="$PROJECT_DIR$/roles/upstart/files/init-fake.conf" />
+        <option value="$PROJECT_DIR$/roles/upstart/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/molecule/default/molecule.yml" />
+        <option value="$PROJECT_DIR$/.travisci.yml" />
+        <option value="$PROJECT_DIR$/defaults/systemd.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/meta/main.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/Debian.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/Ubuntu.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/Alpine.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/CentOS.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/vars/CentOS-6.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/tasks/load-variables.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/meta/main.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/roles/systemd/meta/main.yml" />
+        <option value="$PROJECT_DIR$/roles/upstart/meta/main.yml" />
+        <option value="$PROJECT_DIR$/roles/systemd/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/molecule/default/playbook.yml" />
+        <option value="$PROJECT_DIR$/roles/bootstrap/meta/container.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/meta/container.yml" />
+        <option value="$PROJECT_DIR$/roles/upstart/meta/container.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/ansible.cfg" />
+        <option value="$PROJECT_DIR$/requirements.yml" />
+        <option value="$PROJECT_DIR$/container.yml" />
       </list>
     </option>
   </component>
@@ -101,11 +157,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1273" />
+    <option name="width" value="1294" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -115,6 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,41 +178,31 @@
               <item name="docker-base-ansible" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-base-ansible" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="docker-base-ansible" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-base-ansible" type="462c0819:PsiDirectoryNode" />
-              <item name="defaults" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-base-ansible" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-base-ansible" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-base-ansible" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-base-ansible" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-base-ansible" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-base-ansible" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ansible-container-role-upstart" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible\roles\upstart" />
+      <recent name="C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible\roles\systemd\meta" />
+      <recent name="C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible\roles\cleanup\meta" />
+      <recent name="C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible" />
+      <recent name="C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible\roles" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible\molecule\default" />
+      <recent name="C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible" />
+      <recent name="C:\Users\wilmaro\Documents\Ubuntu\docker\docker-base-ansible\roles\systemd" />
       <recent name="D:\Users\Wilmar\Documents\Development\docker-base-ansible\files" />
       <recent name="D:\Users\Wilmar\Documents\Development\docker-base-ansible" />
     </key>
@@ -187,27 +233,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1273" y="0" width="1294" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23474178" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -220,62 +266,332 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/files/init-fake.conf">
+    <entry file="file://$PROJECT_DIR$/roles/systemd/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/bootstrap/tasks/setup-prerequisite.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/vars/Alpine.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/vars/Fedora.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/bootstrap/vars/Fedora-26.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/vars/Ubuntu.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/defaults/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/tasks/Fedora.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-cleanup/tasks/Fedora.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-cleanup/tasks/CentOS.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-cleanup/tasks/Ubuntu.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-cleanup/tasks/Debian.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-upstart/files/init-fake.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/Dockerfile-CentOS-6">
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-upstart/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molecule/default/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/Dockerfile-Ubuntu-14.04">
+    <entry file="file://$PROJECT_DIR$/molecule/default/rules/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/upstart/molecule/default/rules/TaskNoArgs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/defaults/main.yml">
+    <entry file="file://$PROJECT_DIR$/molecule/default/molecule.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Dockerfile-systemd.j2">
+    <entry file="file://$PROJECT_DIR$/roles/cleanup/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/tasks/Debian.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/main.yml">
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/post-push.j2">
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/tasks/Ubuntu.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/build-dockerfiles.yml">
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/tasks/Alpine.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/tasks/CentOS.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/bootstrap/vars/CentOS-6.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="75" />
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/setup-hooks.yml">
+    <entry file="file://$PROJECT_DIR$/roles/bootstrap/vars/Ubuntu-14.04.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="34">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/vars/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" selection-start-line="1" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/vars/CentOS.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/vars/Debian.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/tasks/load-variables.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-cleanup/meta/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/cleanup/vars/CentOS-6.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/cleanup/tasks/load-variables.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-cleanup/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-cleanup/tasks/Alpine.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-systemd/meta/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-upstart/meta/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-systemd/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molecule/default/playbook.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/meta/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-systemd/meta/container.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-upstart/meta/container.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-cleanup/meta/container.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible-container-role-bootstrap/meta/container.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/defaults/systemd.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travisci.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meta.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/container.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

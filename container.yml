@@ -1,0 +1,23 @@
+---
+version: "2"
+defaults:
+  base_image: centos:7
+  roles:
+    - bootstrap
+    - systemd
+    - cleanup
+services:
+  node:
+    from: "{{ base_image }}"
+    roles:
+      - role: bootstrap
+        when: "'bootstrap' in roles"
+      - role: systemd
+        when: "'systemd' in roles"
+      - role: upstart
+        when: "'upstart' in roles"
+      - role: cleanup
+        when: "'cleanup' in roles"
+registries:
+  docker:
+    url:
