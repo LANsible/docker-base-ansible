@@ -1,21 +1,23 @@
 ---
 version: "2"
 defaults:
-  base_image: centos:7
+  image: centos:7
   roles:
     - bootstrap
     - systemd
     - cleanup
+settings:
+  project_name: ansible_testing
 services:
   node:
-    from: "{{ base_image }}"
+    from: "{{ image }}"
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:
       container: docker
     stop_signal: SIGRTMIN+3
     entrypoint: [/sbin/init]
-     roles:
+    roles:
       - role: bootstrap
         when: "'bootstrap' in roles"
       - role: systemd
