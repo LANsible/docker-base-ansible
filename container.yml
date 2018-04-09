@@ -9,7 +9,13 @@ defaults:
 services:
   node:
     from: "{{ base_image }}"
-    roles:
+    labels:
+      maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
+    environment:
+      container: docker
+    stop_signal: SIGRTMIN+3
+    entrypoint: [/sbin/init]
+     roles:
       - role: bootstrap
         when: "'bootstrap' in roles"
       - role: systemd
@@ -18,6 +24,4 @@ services:
         when: "'upstart' in roles"
       - role: cleanup
         when: "'cleanup' in roles"
-registries:
-  docker:
-    url:
+registries: {}
