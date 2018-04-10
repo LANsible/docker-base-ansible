@@ -6,8 +6,8 @@ defaults:
     - bootstrap
     - systemd
     - cleanup
-settings:
-  project_name: ansible_testing
+  tmpfs:
+    - /run
 services:
   node:
     from: "{{ image }}"
@@ -17,6 +17,11 @@ services:
       container: docker
     stop_signal: SIGRTMIN+3
     entrypoint: [/sbin/init]
+    cap_add:
+      - SYS_ADMIN
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    tmpfs: "{{ tmpfs }}"
     roles:
       - role: bootstrap
         when: "'bootstrap' in roles"
