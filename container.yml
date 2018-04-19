@@ -15,15 +15,14 @@ services:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:
       container: docker
-    stop_signal: SIGRTMIN+3
-    entrypoint: [/sbin/init]
+    command: ['/usr/bin/systemctl']
     roles:
       - role: bootstrap
         when: "'bootstrap' in roles"
       - role: systemd
         when: "'systemd' in roles"
-      - role: upstart
-        when: "'upstart' in roles"
+#      - role: upstart
+#        when: "'upstart' in roles"
       - role: cleanup
         when: "'cleanup' in roles"
 registries: {}
