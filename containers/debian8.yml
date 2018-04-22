@@ -5,7 +5,7 @@ settings:
   conductor:
     base: debian:8
 services:
-  centos:
+  debian:
     from: debian:8
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>

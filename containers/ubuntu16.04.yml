@@ -5,7 +5,7 @@ settings:
   conductor:
     base: ubuntu:16.04
 services:
-  centos:
+  ubuntu:
     from: ubuntu:16.04
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>

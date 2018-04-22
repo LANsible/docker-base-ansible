@@ -5,7 +5,7 @@ settings:
   conductor:
     base: ubuntu:12.04
 services:
-  centos:
+  ubuntu:
     from: ubuntu:12.04
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
