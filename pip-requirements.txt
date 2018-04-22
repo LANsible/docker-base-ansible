@@ -1,4 +1,4 @@
-git+https://github.com/ansible/ansible-container
+-e git+https://github.com/ansible/ansible-container
 backports.ssl-match-hostname==3.5.0.1
 certifi==2018.4.16
 chardet==3.0.4
