@@ -27,8 +27,7 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get -qq install --only-upgrade docker-ce -y
 install:
-  - pip install molecule
-  - pip install -e -r pip-requirements.txt
+  - pip install -r pip-requirements.txt
 script:
   - molecule check
   - ansible-container --config-file $CONFIG build
