@@ -18,16 +18,16 @@ matrix:
     - env: CONFIG=containers/fedora27.yml TAGS="--tag latest --tag 27"
     - env: CONFIG=containers/fedora26.yml TAGS="--tag 26"
     - env: CONFIG=containers/fedora25.yml TAGS="--tag 25"
-    - env: CONFIG=containers/ubuntu1604.yml TAGS="--tag latest --tag 16.04 --tag xenial"
-    - env: CONFIG=containers/ubuntu1404.yml TAGS="--tag latest --tag 14.04 --tag trusty"
-    - env: CONFIG=containers/ubuntu1204.yml TAGS="--tag latest --tag 12.04 --tag precise"
+    - env: CONFIG=containers/ubuntu16.04.yml TAGS="--tag latest --tag 16.04 --tag xenial"
+    - env: CONFIG=containers/ubuntu14.04.yml TAGS="--tag latest --tag 14.04 --tag trusty"
+    - env: CONFIG=containers/ubuntu12.04.yml TAGS="--tag latest --tag 12.04 --tag precise"
 services:
   - docker
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get -qq install --only-upgrade docker-ce -y
 install:
-  - git clone https://github.com/ansible/ansible-container.git && pip install -e ansible-container[docker,openshift]
+  - git clone https://github.com/ansible/ansible-container.git && pip install -e ansible-container[docker]
   - pip install -r pip-requirements.txt
 script:
   - molecule check
