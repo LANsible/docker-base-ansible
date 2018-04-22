@@ -1,3 +1,4 @@
+---
 dist: trusty
 language: python
 sudo: required
@@ -9,17 +10,17 @@ env:
     - secure: Tbk9G2NJsx0OzcdU92O4G6NjDYV1rO6oLJ7+ItGbYK93KVLPxh/sTzs8rwncyh3aQFJwF01Z4Liggqddqqko0aiDvlzNOlIyw/cbzszQSGSfdZT5/M6SMmJoy+JhbJLkYGeEX7rK9agVpaVwhz/we73M4cig7NSRCGNZn/7rUialVoLO1wPfHNCzPd0/qTZ/CI8VsxfQGsA7as67RGswZYK/q8DzdngaYh4d8o8OAQsxfqWjruF3XLRkpAdDT3XPmvAes4BOfnZ1HcZqmtqVl4FWIGw0eebSJmTPAGXZ9zRSL+nRlJ+Fb9yqCsBrLHD80eyu7xNnRvZqaMlIF0f3gHEdxCk2BPyKR50+puEz6RKPxeg5zN7vx/zFEyYCyxmJuCfjK54WGV7TnX2oTxTSvTOiNbgZUGxyl97KVUQGj8sOhUVxxj6sMgX6p2T0gTWG1DqonSEweno/65edpLGNXwLNQ5sbjnKF8R42WkDIiDHO/eHOoEzOI9jmvXjw48QbdIYGVonnyEXIIsLbjqNoR6BFHbSQvKq6kDTJZXMgygUyJNKUwY6093Jcvr4UdXYqIxIEuLJJp8i93DPJK6ELc7fvAMD5eK6f8/imQ+URykoYqRkEyfKOgPkFrLacoNqBcSIUt0cODxKTVPcGpY7MhZXOFz0MN9h0WjehDZiNaEE=
 matrix:
   include:
-  - env: CONFIG=containers/centos7.yml TAGS="--tag latest --tag 7"
-  - env: CONFIG=containers/centos6.yml TAGS="--tag 6"
-  - env: CONFIG=containers/debian9.yml TAGS="--tag latest --tag 9 --tag stretch"
-  - env: CONFIG=containers/debian8.yml TAGS="--tag 8 --tag jessie"
-  - env: CONFIG=containers/debian7.yml TAGS="--tag 7 --tag wheezy"
-  - env: CONFIG=containers/fedora27.yml TAGS="--tag latest --tag 27"
-  - env: CONFIG=containers/fedora26.yml TAGS="--tag 26"
-  - env: CONFIG=containers/fedora25.yml TAGS="--tag 25"
-  - env: CONFIG=containers/ubuntu1604.yml TAGS="--tag latest --tag 16.04 --tag xenial"
-  - env: CONFIG=containers/ubuntu1404.yml TAGS="--tag latest --tag 14.04 --tag trusty"
-  - env: CONFIG=containers/ubuntu1204.yml TAGS="--tag latest --tag 12.04 --tag precise"
+    - env: CONFIG=containers/centos7.yml TAGS="--tag latest --tag 7"
+    - env: CONFIG=containers/centos6.yml TAGS="--tag 6"
+    - env: CONFIG=containers/debian9.yml TAGS="--tag latest --tag 9 --tag stretch"
+    - env: CONFIG=containers/debian8.yml TAGS="--tag 8 --tag jessie"
+    - env: CONFIG=containers/debian7.yml TAGS="--tag 7 --tag wheezy"
+    - env: CONFIG=containers/fedora27.yml TAGS="--tag latest --tag 27"
+    - env: CONFIG=containers/fedora26.yml TAGS="--tag 26"
+    - env: CONFIG=containers/fedora25.yml TAGS="--tag 25"
+    - env: CONFIG=containers/ubuntu1604.yml TAGS="--tag latest --tag 16.04 --tag xenial"
+    - env: CONFIG=containers/ubuntu1404.yml TAGS="--tag latest --tag 14.04 --tag trusty"
+    - env: CONFIG=containers/ubuntu1204.yml TAGS="--tag latest --tag 12.04 --tag precise"
 services:
   - docker
 before_install:
@@ -30,8 +31,7 @@ install:
   - pip install molecule
   - pip install -r pip-requirements.txt
 script:
-  - ansible-container --version
-  - molecule test
+  - molecule check
   - ansible-container --config-file $CONFIG build
   - ansible-container push $TAGS --username wilmardo --password $DOCKER_PASSWORD--push-to docker
 notifications:

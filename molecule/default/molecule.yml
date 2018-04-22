@@ -12,10 +12,5 @@ platforms:
 
 scenario:
   name: default
-  create_sequence: []
   check_sequence:
-    - lint
-  converge_sequence: []
-  destroy_sequence: []
-  test_sequence:
     - lint
