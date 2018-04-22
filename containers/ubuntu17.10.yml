@@ -3,10 +3,10 @@ version: "2"
 settings:
   project_name: "ubuntu"
   conductor:
-    base: ubuntu:zesty
+    base: ubuntu:artful
 services:
   ubuntu:
-    from: ubuntu:17.04
+    from: ubuntu:17.10
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:

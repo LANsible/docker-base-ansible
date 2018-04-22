@@ -1,12 +1,12 @@
 ---
 version: "2"
 settings:
-  project_name: "ubuntu"
+  project_name: "alpine"
   conductor:
-    base: ubuntu:zesty
+    base: alpine:3.7
 services:
-  ubuntu:
-    from: ubuntu:17.04
+  alpine:
+    from: alpine:3.7
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:
@@ -14,7 +14,6 @@ services:
     command: ['/usr/bin/systemctl']
     roles:
       - role: bootstrap
-      - role: systemd
 registries:
   docker:
     url: https://docker.io

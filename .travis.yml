@@ -9,6 +9,8 @@ env:
     - fast_finish: true
 matrix:
   include:
+    - env: CONFIG=containers/alpine3.4.yml TAGS="3.4"
+    - env: CONFIG=containers/alpine3.5.yml TAGS="3.5"
     - env: CONFIG=containers/centos7.yml TAGS="7 latest"
 #    - env: CONFIG=containers/centos6.yml TAGS="6"
     - env: CONFIG=containers/debian9.yml TAGS="9 stretch latest"
@@ -17,6 +19,8 @@ matrix:
     - env: CONFIG=containers/fedora27.yml TAGS="27 latest"
     - env: CONFIG=containers/fedora26.yml TAGS="26"
     - env: CONFIG=containers/fedora25.yml TAGS="25"
+    - env: CONFIG=containers/fedora24.yml TAGS="24"
+    - env: CONFIG=containers/ubuntu17.10.yml TAGS="17.04 artful rolling"
     - env: CONFIG=containers/ubuntu17.04.yml TAGS="17.04 zesty"
     - env: CONFIG=containers/ubuntu16.04.yml TAGS="16.04 xenial latest "
     - env: CONFIG=containers/ubuntu14.04.yml TAGS="14.04 trusty"

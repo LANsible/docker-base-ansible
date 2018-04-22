@@ -1,12 +1,12 @@
 ---
 version: "2"
 settings:
-  project_name: "ubuntu"
+  project_name: "fedora"
   conductor:
-    base: ubuntu:zesty
+    base: fedora:24
 services:
-  ubuntu:
-    from: ubuntu:17.04
+  fedora:
+    from: fedora:24
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:
