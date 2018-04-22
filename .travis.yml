@@ -32,7 +32,7 @@ install:
 script:
   - molecule check
   - ansible-container --config-file $CONFIG build
-  - ansible-container push $TAGS --username wilmardo --password $DOCKER_PASSWORD --push-to docker
+  - ansible-container --config-file $CONFIG push $TAGS --username wilmardo --password $DOCKER_PASSWORD --push-to docker
 notifications:
   email:
     on_failure: change
