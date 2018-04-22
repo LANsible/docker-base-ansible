@@ -1,16 +1,16 @@
 ---
-- src: https://github.com/wilmardo/ansible-container-role-bootstrap
+- src: https://github.com/lansible/ansible-container-role-bootstrap
   version: master
   name: bootstrap
 
-- src: https://github.com/wilmardo/ansible-container-role-systemd
+- src: https://github.com/lansible/ansible-container-role-systemd
   version: master
   name: systemd
 
-- src: https://github.com/wilmardo/ansible-container-role-upstart
+- src: https://github.com/lansible/ansible-container-role-upstart
   version: master
   name: upstart
 
-- src: https://github.com/wilmardo/ansible-container-role-cleanup
+- src: https://github.com/lansible/ansible-container-role-cleanup
   version: master
   name: cleanup

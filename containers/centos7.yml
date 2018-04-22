@@ -1,0 +1,22 @@
+---
+version: "2"
+settings:
+  project_name: "centos"
+  conductor:
+    base: centos:7
+services:
+  centos:
+    from: centos:7
+    labels:
+      maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
+    environment:
+      container: docker
+    command: ['/usr/bin/systemctl']
+    roles:
+      - role: bootstrap
+      - role: systemd
+registries:
+  docker:
+    url: https://docker.io
+    namespace: lansible
+    repository_prefix: ''

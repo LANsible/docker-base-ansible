@@ -1,0 +1,22 @@
+---
+version: "2"
+settings:
+  project_name: "ubuntu"
+  conductor:
+    base: ubuntu:14.04
+services:
+  centos:
+    from: ubuntu:14.04
+    labels:
+      maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
+    environment:
+      container: docker
+    command: ['/usr/bin/systemctl']
+    roles:
+      - role: bootstrap
+      - role: upstart
+registries:
+  docker:
+    url: https://docker.io
+    namespace: lansible
+    repository_prefix: ''
