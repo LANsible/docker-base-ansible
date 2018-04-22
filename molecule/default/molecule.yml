@@ -1,0 +1,16 @@
+---
+lint:
+  name: yamllint
+
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+
+platforms:
+  - name: instance
+
+scenario:
+  name: default
+  check_sequence:
+    - lint

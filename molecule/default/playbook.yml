@@ -1,0 +1,8 @@
+---
+- name: Lint
+  hosts: all
+  roles:
+    - role: bootstrap
+    - role: cleanup
+    - role: systemd
+    - role: upstart

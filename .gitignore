@@ -1,0 +1,4 @@
+.molecule/
+.idea/
+*.pyc
+ansible-container/

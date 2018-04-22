@@ -1,0 +1,22 @@
+---
+version: "2"
+settings:
+  project_name: "debian"
+  conductor:
+    base: debian:8
+services:
+  debian:
+    from: debian:8
+    labels:
+      maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
+    environment:
+      container: docker
+    command: ['/usr/bin/systemctl']
+    roles:
+      - role: bootstrap
+      - role: systemd
+registries:
+  docker:
+    url: https://docker.io
+    namespace: lansible
+    repository_prefix: ''
