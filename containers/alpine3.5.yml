@@ -3,10 +3,10 @@ version: "2"
 settings:
   project_name: "alpine"
   conductor:
-    base: alpine:3.7
+    base: alpine:3.5
 services:
   alpine:
-    from: alpine:3.7
+    from: alpine:3.5
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:
