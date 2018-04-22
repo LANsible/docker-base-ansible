@@ -11,7 +11,7 @@ services:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:
       container: docker
-    command: ['/usr/bin/systemctl']
+    command: ['/usr/bin/initctl']
     roles:
       - role: bootstrap
       - role: upstart
