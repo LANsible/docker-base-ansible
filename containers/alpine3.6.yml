@@ -1,0 +1,21 @@
+---
+version: "2"
+settings:
+  project_name: "alpine"
+  conductor:
+    base: alpine:3.6
+services:
+  alpine:
+    from: alpine:3.6
+    labels:
+      maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
+    environment:
+      container: docker
+    command: ['/usr/bin/systemctl']
+    roles:
+      - role: bootstrap
+registries:
+  docker:
+    url: https://docker.io
+    namespace: lansible
+    repository_prefix: ''
