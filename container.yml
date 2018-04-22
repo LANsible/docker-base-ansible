@@ -2,7 +2,7 @@
 version: "2"
 defaults:
   image: centos:7
-  roles:
+  install:
     - bootstrap
     - systemd
     - cleanup
@@ -18,11 +18,9 @@ services:
     command: ['/usr/bin/systemctl']
     roles:
       - role: bootstrap
-        when: "'bootstrap' in roles"
+        when: "'bootstrap' in install"
       - role: systemd
-        when: "'systemd' in roles"
+        when: "'systemd' in install"
 #      - role: upstart
-#        when: "'upstart' in roles"
-      - role: cleanup
-        when: "'cleanup' in roles"
+#        when: "'upstart' in install"
 registries: {}
