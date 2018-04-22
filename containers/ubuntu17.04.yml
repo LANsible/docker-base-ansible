@@ -3,10 +3,10 @@ version: "2"
 settings:
   project_name: "ubuntu"
   conductor:
-    base: ubuntu:17.10
+    base: ubuntu:17.04
 services:
   ubuntu:
-    from: ubuntu:17.10
+    from: ubuntu:17.04
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:
