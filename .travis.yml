@@ -17,7 +17,7 @@ matrix:
     - env: CONFIG=containers/fedora27.yml TAGS="27 latest"
     - env: CONFIG=containers/fedora26.yml TAGS="26"
     - env: CONFIG=containers/fedora25.yml TAGS="25"
-    - env: CONFIG=containers/ubuntu17.10.yml TAGS="17.04 zesty"
+    - env: CONFIG=containers/ubuntu17.04.yml TAGS="17.04 zesty"
     - env: CONFIG=containers/ubuntu16.04.yml TAGS="16.04 xenial latest "
     - env: CONFIG=containers/ubuntu14.04.yml TAGS="14.04 trusty"
     - env: CONFIG=containers/ubuntu12.04.yml TAGS="12.04 precise"
