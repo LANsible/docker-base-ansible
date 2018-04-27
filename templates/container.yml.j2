@@ -1,20 +1,20 @@
-{%- if (distro == 'centos' and version == 7) or (distro == 'ubuntu' and version >= 15) or (distro == 'debian' and version >= 8) %}
+{%- if (distro == 'centos' and version == 7) or (distro == 'ubuntu' and version >= 15) or (distro == 'debian' and version >= 8) -%}
     {# SystemD #}
-    {%- set install = [ 'bootstrap', 'systemd' ] %}
-    {%- set command = "/usr/bin/systemctl" %}
-{%- elif (distro == 'ubuntu' and version <= 15) %}
+    {%- set install = [ 'bootstrap', 'systemd' ] -%}
+    {%- set command = "/usr/bin/systemctl" -%}
+{%- elif (distro == 'ubuntu' and version <= 15) -%}
     {# Upstart #}
-    {%- set install = [ 'bootstrap', 'upstart' ] %}
-    {%- set command = "/sbin/init" %}
-{%- elif (distro == 'centos' and version <= 6) or (distro == 'ubuntu' and version <= 14) or (distro == 'debian' and version <= 7) %}
+    {%- set install = [ 'bootstrap', 'upstart' ] -%}
+    {%- set command = "/sbin/init" -%}
+{%- elif (distro == 'centos' and version <= 6) or (distro == 'ubuntu' and version <= 14) or (distro == 'debian' and version <= 7) -%}
     {# SysVinit #}
-    {%- set install = [ 'bootstrap' ] %}
+    {%- set install = [ 'bootstrap' ] -%}
     {%- set command = "/sbin/init" %}
-{%- else %}
+{%- else -%}
     {# Everything else just bootstrap #}
-    {%- set install = [ 'bootstrap' ] %}
-    {%- set command = "/bin/bash" %}
-{%- endif %}
+    {%- set install = [ 'bootstrap' ] -%}
+    {%- set command = "/bin/bash" -%}
+{%- endif -%}
 ---
 version: "2"
 settings:

@@ -50,7 +50,7 @@ script:
                       -a "src=container.yml.j2 dest=container.yml" \
                       -e "{ "distro": "${DISTRO}", "version": "${VERSION}" }"
   - cat container.yml
-  - ansible-container -- -v build
+  - ansible-container build -- -v
 
 deploy:
   - provider: script
