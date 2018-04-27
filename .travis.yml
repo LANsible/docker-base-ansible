@@ -45,7 +45,10 @@ before_install:
 install:
   - pip install -r pip-requirements.txt
 script:
-  - ansible localhost -m template -a "src=container.yml.j2 dest=container.yml" -e '{ "distro": "$DISTRO", "version": "$VERSION" }'
+  - |
+    ansible localhost -m template \
+                      -a "src=container.yml.j2 dest=container.yml" \
+                      -e '{ "distro": "$DISTRO", "version": "$VERSION" }'
   - cat container.yml
   - ansible-container -- -v
 
