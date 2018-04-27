@@ -20,16 +20,16 @@ version: "2"
 settings:
   project_name: "{{ distro }}"
   conductor:
-    base: "{{ distro }}:{{ version }}"
+    base: {{ distro }}:{{ version }}
 
 services:
   centos:
-    from: "{{ distro }}:{{ version }}"
+    from: {{ distro }}:{{ version }}
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
     environment:
       container: docker
-    command: "['{{ command }}']"
+    command: ['{{ command }}']
     roles:
       {% if 'bootstrap' in install -%}
         - role: bootstrap
