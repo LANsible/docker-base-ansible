@@ -2,3 +2,4 @@
 .idea/
 *.pyc
 ansible-container/
+container.yml
