@@ -1,19 +1,27 @@
-{% if (distro == 'centos' and version == 7) or (distro == 'ubuntu' and version >= 15) or (distro == 'debian' and version >= 8) %}
-    {% set install = [ 'bootstrap', 'systemd' ] %}
-    {% set command = "/usr/bin/systemctl" %}
-{% elif (distro == 'centos' and version <= 6) or (distro == 'ubuntu' and version <= 14) or (distro == 'debian' and version <= 7) %}
-    {% set install = [ 'bootstrap', 'upstart' ] %}
-    {% set command = "/sbin/init" %}
-{% else %}
-    {% set install = [ 'bootstrap' ] %}
-    {% set command = "" %}
-{% endif %}
+{%- if (distro == 'centos' and version == 7) or (distro == 'ubuntu' and version >= 15) or (distro == 'debian' and version >= 8) %}
+    {# SystemD #}
+    {%- set install = [ 'bootstrap', 'systemd' ] %}
+    {%- set command = "/usr/bin/systemctl" %}
+{%- elif (distro == 'ubuntu' and version <= 15) %}
+    {# Upstart #}
+    {%- set install = [ 'bootstrap', 'upstart' ] %}
+    {%- set command = "/sbin/init" %}
+{%- elif (distro == 'centos' and version <= 6) or (distro == 'ubuntu' and version <= 14) or (distro == 'debian' and version <= 7) %}
+    {# SysVinit #}
+    {%- set install = [ 'bootstrap' ] %}
+    {%- set command = "/sbin/init" %}
+{%- else %}
+    {# Everything else just bootstrap #}
+    {%- set install = [ 'bootstrap' ] %}
+    {%- set command = "/bin/bash" %}
+{%- endif %}
 ---
 version: "2"
 settings:
   project_name: "{{ distro }}"
   conductor:
     base: "{{ distro }}:{{ version }}"
+
 services:
   centos:
     from: "{{ distro }}:{{ version }}"
@@ -23,15 +31,16 @@ services:
       container: docker
     command: "['{{ command }}']"
     roles:
-    {% if 'bootstrap' in install -%}
-      - role: bootstrap
-    {% endif -%}
-    {% if 'systemd' in install -%}
-      - role: systemd
-    {% endif -%}
-    {% if 'upstart' in install -%}
-      - role: upstart
-    {% endif %}
+      {% if 'bootstrap' in install -%}
+        - role: bootstrap
+      {% endif -%}
+      {% if 'systemd' in install -%}
+        - role: systemd
+      {% endif -%}
+      {% if 'upstart' in install -%}
+        - role: upstart
+      {% endif %}
+
 registries:
   docker:
     url: https://docker.io

@@ -43,12 +43,11 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get -qq install --only-upgrade docker-ce -y
 install:
-  - git clone https://github.com/ansible/ansible-container.git && pip install -e ansible-container[docker]
   - pip install -r pip-requirements.txt
 script:
-  - ansible localhost -m container.yml.j2 -a "src=container.yml.j2 dest=container.yml" -e { "distro": "$DISTRO", "version": "$VERSION" }
-  - molecule check
-  - ansible-container --config-file containers/$DISTRO build -- -v
+  - ansible localhost -m template -a "src=container.yml.j2 dest=container.yml" -e '{ "distro": "$DISTRO", "version": "$VERSION" }'
+  - cat container.yml
+  - ansible-container -- -v
 
 deploy:
   - provider: script
