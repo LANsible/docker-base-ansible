@@ -53,10 +53,11 @@ script:
   - ansible-container build -- -v
 
 deploy:
-  - provider: script
-    script: bash deploy/deploy.sh
-    on:
-      branch: master
+  provider: script
+  script: bash deploy/deploy.sh
+  on:
+    branch: master
+  skip_cleanup: true
 
 notifications:
   email:
