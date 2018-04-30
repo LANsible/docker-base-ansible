@@ -17,7 +17,7 @@ matrix:
 #    - env: DISTRO=alpine VERSION=3.6 TAGS="3.6"
 #    - env: DISTRO=alpine VERSION=3.7 TAGS="3.7 latest"
     - env: DISTRO=centos VERSION=7 TAGS="7 latest"
-#    - env: DISTRO=centos VERSION=6 TAGS="6"
+    - env: DISTRO=centos VERSION=6 TAGS="6"
     - env: DISTRO=debian VERSION=9 TAGS="9 stretch latest"
     - env: DISTRO=debian VERSION=8 TAGS="8 jessie"
     - env: DISTRO=debian VERSION=7 TAGS="7 wheezy"
