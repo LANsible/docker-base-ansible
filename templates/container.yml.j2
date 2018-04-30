@@ -28,7 +28,7 @@ settings:
     base: {{ distro }}:{{ version }}
 
 services:
-  centos:
+  {{ distro }}:
     from: {{ distro }}:{{ version }}
     labels:
       maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
