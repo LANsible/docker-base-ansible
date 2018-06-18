@@ -17,22 +17,22 @@ matrix:
 #    - env: DISTRO=alpine VERSION=3.6 TAGS="3.6"
 #    - env: DISTRO=alpine VERSION=3.7 TAGS="3.7 latest"
     - env: DISTRO=centos VERSION=7 TAGS="7 latest"
-#    - env: DISTRO=centos VERSION=6 TAGS="6"
+    - env: DISTRO=centos VERSION=6 TAGS="6"
     - env: DISTRO=debian VERSION=9 TAGS="9 stretch latest"
     - env: DISTRO=debian VERSION=8 TAGS="8 jessie"
     - env: DISTRO=debian VERSION=7 TAGS="7 wheezy"
     - env: DISTRO=fedora VERSION=27 TAGS="27 latest"
     - env: DISTRO=fedora VERSION=26 TAGS="26"
     - env: DISTRO=fedora VERSION=25 TAGS="25"
-#    - env: DISTRO=fedora VERSION=24 TAGS="24"
-#    - env: DISTRO=ubuntu VERSION=17.10 TAGS="17.10 artful rolling"
-#    - env: DISTRO=ubuntu VERSION=17.04 TAGS="17.04 zesty"
-    - env: DISTRO=ubuntu VERSION=16.04 TAGS="16.04 xenial latest "
+    - env: DISTRO=ubuntu VERSION=18.04 TAGS="18.04 bionic latest rolling"
+    - env: DISTRO=ubuntu VERSION=16.04 TAGS="16.04 xenial"
     - env: DISTRO=ubuntu VERSION=14.04 TAGS="14.04 trusty"
     - env: DISTRO=ubuntu VERSION=12.04 TAGS="12.04 precise"
 
   allow_failures:
+    - env: DISTRO=ubuntu VERSION=18.04 TAGS="18.04 bionic latest rolling"
     #FIXME: Upstart role not playing nice
+    - env: DISTRO=centos VERSION=6 TAGS="6"
     - env: DISTRO=ubuntu VERSION=14.04 TAGS="14.04 trusty"
     - env: DISTRO=ubuntu VERSION=12.04 TAGS="12.04 precise"
 
